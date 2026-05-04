@@ -9,9 +9,9 @@ function init() {
   const hornaudio = document.querySelector("#expose audio")
   horn.addEventListener("change", (event) => {
     console.log(event.target.value)
-    hornimg.src = `/assets/images/${event.target.value}.svg`;
+    hornimg.src = `Lab5_Starter/assets/images/${event.target.value}.svg`;
     hornimg.alt = `${event.target.value}-image`;
-    hornaudio.src = `/assets/audio/${event.target.value}.mp3`;
+    hornaudio.src = `Lab5_Starter/assets/audio/${event.target.value}.mp3`;
     console.log(hornaudio.src)
   })
 
@@ -20,16 +20,16 @@ function init() {
   hornvolume.addEventListener("input", (event) => {
     const vol = event.target.value
     if(vol == 0){
-      hornvolumeimg.src = "/assets/icons/volume-level-0.svg"
+      hornvolumeimg.src = "Lab5_Starter/assets/icons/volume-level-0.svg"
       hornvolumeimg.alt = "Volume Level 0"
     } else if (vol > 0 && vol < 33) {
-      hornvolumeimg.src = "/assets/icons/volume-level-1.svg"
+      hornvolumeimg.src = "Lab5_Starter/assets/icons/volume-level-1.svg"
       hornvolumeimg.alt = "Volume Level 1"
     } else if (vol >= 33 && vol < 67) {
-      hornvolumeimg.src = "/assets/icons/volume-level-2.svg"
+      hornvolumeimg.src = "Lab5_Starter/assets/icons/volume-level-2.svg"
       hornvolumeimg.alt = "Volume Level 2"
     } else if (vol >= 67 && vol <= 100) {
-      hornvolumeimg.src = "/assets/icons/volume-level-3.svg"
+      hornvolumeimg.src = "Lab5_Starter/assets/icons/volume-level-3.svg"
       hornvolumeimg.alt = "Volume Level 3"
     }
     hornaudio.volume = vol/100;
