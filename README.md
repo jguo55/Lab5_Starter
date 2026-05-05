@@ -1,5 +1,6 @@
 # Lab 5 - Starter
-Jensen Guo
+Jensen Guo [https://jguo55.github.io/Lab5_Starter/explore.html](explore) [https://jguo55.github.io/Lab5_Starter/expose.html](expose)
+
 
 1. You would not use a unit test to test the "message" feature of an application. This feature requires many moving parts and multiple components at once to function, so it's more appropriate for an E2E test.
 
